@@ -78,12 +78,12 @@ int main()
     for(int i = 0; i < col; i++)
     {
         temp = 0;
-        currentRow = (middle - i) - 1;
-        if((currentRow < 0 && (currentRow + (2 * i)) < 0 )|| currentRow >= rows)
+        currentRow = (middle - i);
+        if((currentRow < 0 && (currentRow + (2 * i)) < 0 )|| currentRow > rows)
         {
             continue;
         }
-        if(currentRow != 0)
+        if(currentRow > 0)
         {
             for(currentCol = 0 ; currentCol < col ; currentCol++)
             {
@@ -105,7 +105,7 @@ int main()
             }
         }
 
-        if(i != 0)
+        if(i != 0 && !check)
         {
             temp = 0;
             currentRow += (2 * i);
