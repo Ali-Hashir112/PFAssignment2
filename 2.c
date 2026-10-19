@@ -2,17 +2,15 @@
 
 int sum(int a)
 {
-    int limit = a;
     int sum = 1;
-    for(int i = 2 ; i < limit ; i ++)
+    for(int i = 2 ; i * i <= a ; i ++)
     {
         if(a % i == 0)
         {
-            limit = a/i;
             sum += i;
-            if(limit != i)
+            if(i != a/i)
             {
-                sum += limit;
+                sum += a/i;
             }
         }
     }
