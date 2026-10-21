@@ -101,7 +101,7 @@ int main()
 
     highest = findHighestSalesDay(sales , days);
 
-    printf("===== FESTIVAL SUMMARY =====\n");
+    printf("\n===== FESTIVAL SUMMARY =====\n");
     printf("Total festival sales: Rs. %.2f\n" , total);
     printf("Day with highest sales: Day %d\n" , highest);
     printf("Highest daily sales: Rs. %.2f\n" , sales[highest-1]);
